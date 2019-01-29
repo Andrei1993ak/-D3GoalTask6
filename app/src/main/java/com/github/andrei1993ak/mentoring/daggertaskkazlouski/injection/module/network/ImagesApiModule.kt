@@ -15,11 +15,6 @@ object ImagesApiModule {
 
     private const val BASE_URL: String = "https://api.thecatapi.com/v1/images/"
 
-    /**
-     * Provides the Post service implementation.
-     * @param retrofit the Retrofit object used to instantiate the service
-     * @return the Post service implementation.
-     */
     @Provides
     @Reusable
     @JvmStatic
@@ -28,10 +23,6 @@ object ImagesApiModule {
         return retrofit.create(ImagesApi::class.java)
     }
 
-    /**
-     * Provides the Retrofit object.
-     * @return the Retrofit object
-     */
     @Provides
     @Reusable
     @JvmStatic

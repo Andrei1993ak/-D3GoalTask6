@@ -15,11 +15,6 @@ object RandomTextApiModule {
 
     private const val BASE_URL: String = "http://www.randomtext.me/api/"
 
-    /**
-     * Provides the Post service implementation.
-     * @param retrofit the Retrofit object used to instantiate the service
-     * @return the Post service implementati.on.
-     */
     @Provides
     @Reusable
     @JvmStatic
@@ -28,10 +23,6 @@ object RandomTextApiModule {
         return retrofit.create(RandomTextApi::class.java)
     }
 
-    /**
-     * Provides the Retrofit object.
-     * @return the Retrofit object
-     */
     @Provides
     @Reusable
     @JvmStatic

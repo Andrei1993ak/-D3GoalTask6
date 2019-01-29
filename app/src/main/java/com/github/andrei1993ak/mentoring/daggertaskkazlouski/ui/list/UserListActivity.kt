@@ -16,7 +16,6 @@ import com.github.andrei1993ak.mentoring.daggertaskkazlouski.ui.utils.SwipeToDel
 
 class UserListActivity : BaseActivity<UserListPresenter>(), UsersListView {
 
-
     private lateinit var binding: ActivityUserListBinding
 
     private lateinit var postsAdapter: UserAdapter

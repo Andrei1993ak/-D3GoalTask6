@@ -25,7 +25,7 @@ class UserRepository(private val imagesApi: ImagesApi, private val randomTextApi
 
     fun removeUser(userId: Long): Single<Boolean> {
         return Single.fromCallable {
-            Thread.sleep(2000L)
+            Thread.sleep(1000L)
             true
         }
     }
@@ -34,7 +34,7 @@ class UserRepository(private val imagesApi: ImagesApi, private val randomTextApi
 
     private fun getDescriptionObservable(): Single<List<String>> {
         return randomTextApi.getRandomText(USER_COUNT)
-            .flatMap { it -> getStrings(it) }
+            .flatMap { getStrings(it) }
     }
 
     private fun getStrings(response: RandomTextResponse): Single<List<String>> {

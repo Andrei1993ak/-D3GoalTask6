@@ -11,9 +11,6 @@ import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
 
-/**
- * Component providing inject() methods for presenters.
- */
 @Singleton
 @Component(modules = [(ContextModule::class), (ImagesApiModule::class), (RandomTextApiModule::class), (UserRepositoryModule::class), (AppNavigatorModule::class)])
 interface UserListPresenterInjector {
